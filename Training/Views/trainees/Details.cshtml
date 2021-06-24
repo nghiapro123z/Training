@@ -1,0 +1,74 @@
+﻿@model Training.Models.Training.trainee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>trainee</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.account.username)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.account.username)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.education)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.education)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.programmingLanguage)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.programmingLanguage)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TOEICScore)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TOEICScore)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
